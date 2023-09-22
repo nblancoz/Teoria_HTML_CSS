@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Ramp-Up</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/superdepor.ico">
+    <!-- ese .ico es para agregarle una imagen al lado del nombre de la página -->
+</head>
+
+<body>
+    <h2 class="section_h2">Este es el título</h2>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+                <li><a href="./pages/media.html">Media</a></li>
+                <li><a href="#tabla">Tabla</a></li>
+            </ul>
+            <!-- # es id, . es class -->
+            <!-- el link de tabla redirecciona a la tabla en la misma pagina -->
+            <!-- son paginas aparte que van conectadas para redirigirse a esa pagina -->
+        </nav>
+    </header>
+    <!-- aqui empieza el main -->
+    <!-- los cometarios se hacen con control+k+c -->
+    <main>
+        <h1>Hola FullStack</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sequi itaque quos, repudiandae nemo ad eaque
+            aliquid ullam alias commodi qui officia vero sit nam rem officiis, doloremque nostrum cumque.
+            hola!!
+            <br>
+            <b>bold</b>
+            <i>italica</i>
+            <sub>abajo</sub>
+            <sup>arriba</sup>
+        </p>
+        <section>
+            <h2 class="section_header">Citas:</h2>
+            <article>
+                <section>Ejemplo de una quote:</section>
+                <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+                    dolores
+                    iure
+                    doloremque repellat excepturi quia rerum aut deleniti, repudiandae officia. Nulla quae atque libero
+                    dolorum
+                    voluptatibus veniam repellendus eveniet reiciendis.</blockquote>
+                    <section>Otra:</section>
+                <blockquote cite="link de la cita">es lo mismo que la anterior pero con el link de la cita y no sale en
+                    la
+                    pagina,
+                    sale en su inspector</blockquote>
+            </article>
+        </section>
+        <section>
+            <h2 class="section_header">aside: para que se vaya a un lado se tiene que meter css</h2>
+            <aside>
+                <ul>
+                    <li>uno</li>
+                    <li>dos</li>
+                    <li>tres</li>
+                    <li>cuatro</li>
+                </ul>
+            </aside>
+        </section>
+        <style>
+            table, th, td {
+              border:1px solid black;
+            }
+            /* css in line no es tan recomendabe, esto es sacado de wschools y lo hicieron así pero es mejor ponerlo en otro docuemnto aparte */
+            </style>
+            
+            <h2 class="section_header">A basic HTML table</h2>
+            
+            <table id="tabla" style="width:100%">
+              <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+                <!-- th es para las columnas verticales -->
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+                <!-- td es para las columnas horizontales -->
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+                <!-- se ponen por orden de columna por eso esta va en la columna de abajo de alfreds Futterkiste -->
+              </tr>
+            </table>
+            
+            <p>To understand the example better, we have added borders to the table.</p>
+            <!-- ejemplo de tabla sacado de wschools.com -->
+            <!-- colocar alguna etiqueta con # y darle nombre es para colocar el id automaticamente -->
+            
+        <section id="contact">
+            <h2 class="section_header">Contacto</h2>
+            <form action="#contact" id="contactForm">
+                <label for="fname">Nombre:</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Introduce nombre..."
+                  minlength="3"
+                  maxlenght="30"
+                  required
+                />
+      
+                <label for="lname">Apellidos:</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Introduce apellidos..."
+                  minlength="3"
+                  maxlenght="30"
+                  required
+                />
+      
+                <label for="fname">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Introduce email..."
+                  required
+                />
+      
+                <label for="tlf">Teléfono:</label>
+                <input
+                  type="tel"
+                  id="tlf"
+                  name="tlf"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="Introduce teléfono..."
+                  required
+                />
+      
+                <label for="favorite">¿Cuál es tu comida favorita?:</label>
+                <select id="favorite" name="favorite">
+                  <option value="paella">Paella</option>
+                  <option value="tacos">Tacos</option>
+                  <option value="cebiche">Cebiche</option>
+                  <option value="cuscus">Cuscus</option></select
+                >
+      
+                <label for="season">¿En qué época quieres viajar para comer?</label
+                >
+      
+                <label for="spring"
+                  ><input
+                    type="radio"
+                    id="spring"
+                    name="season"
+                    value="spring"
+                  />primavera</label
+                >
+      
+                <label for="summer"
+                  ><input
+                    type="radio"
+                    id="summer"
+                    name="season"
+                    value="summer"
+                  />verano</label
+                >
+      
+                <label for="autumn"
+                  ><input
+                    type="radio"
+                    id="autumn"
+                    name="season"
+                    value="autumn"
+                  />Otoño</label
+                >
+      
+                <label for="winter"
+                  ><input
+                    type="radio"
+                    id="winter"
+                    name="season"
+                    value="winter"
+                  />Invierno</label
+                >
+      
+                <label for="comments">¿Observaciones?</label>
+                <textarea
+                  rows="2"
+                  cols="30"
+                  name="comments"
+                  wrap="hard"
+                  placeholder="Tus observaciones..."
+                ></textarea
+                >
+      
+                <label
+                  ><input type="checkbox" id="accept" value="accept" name="accept" />
+                  Acepto los términos legales</label
+                >
+      
+                <label for="spam"
+                  ><input type="checkbox" id="spam" value="spam" name="spam" /> Acepto
+                  recibir publicidad</label
+                >
+      
+                <input type="submit" value="Enviar" />
+              </form>
+          
+          
+                <p>columna con foto y texto:</p>
+                <div class="flex-container">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam omnis repellendus totam adipisci assumenda architecto. Veniam velit sapiente nobis dolorum! Optio enim voluptates libero quo aliquid mollitia velit expedita molestiae!</p>
+                    <img src="./assets/lorem.png" alt="ejemplo">
+                </div>
+    
+            </section>
+            <div class="top"><a href="#"> &#128285; Back to top &#9992;</a></div>    </main>
+    <footer>Este es el footer</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
